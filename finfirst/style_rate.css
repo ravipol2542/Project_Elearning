@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+body{
+    display: flex;
+    height: 200vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #4ea4eb, #f15fc6);
+    
+}
+
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+
+.imag{
+    width: 12em;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.container .title{
+    font-size: 20px;
+    font-weight: 1000;
+    position: relative;
+}
+
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg, #4ea4eb, #f15fc6);
+}
+
+form .details,
+form .device{
+    padding-top: 15px;
+    
+}
+form .details .details-title,
+form .device .details-title{    
+    font-size: 17px;
+    font-weight:590;
+}
+
+form .details .category,
+form .device .category{
+    display: flex;
+    width: 85%;
+    margin: 15px 0px;
+    justify-content: space-between;
+}
+
+form .details .text{
+    display: flex;
+    width: 100%;
+    margin: 15px 0px;
+    justify-content: space-between;
+}
+
+.details .category label,
+.device .category label,
+.details .text label{
+    display: flex;
+    align-items: center;  
+
+}
+
+.details .category .detail,
+.device  .category .detail{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius:50% ;
+    margin-right: 5px;
+    margin-left: 5px;
+    border: 5px solid transparent;
+}
+.device .category .devicee{
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 170px;
+}
+.device .category .devicee1{
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 125px;
+}
+
+.details .text .field{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    font-size: 1rem;
+}
+
+.details .text .area{
+    min-height: 100px;
+}
+
+#device-1:checked ~ .category label .one,
+#device-2:checked ~ .category label .two,
+#device-3:checked ~ .category label .three{
+    border-color: #d9d9d9;
+    background: #4ea4eb;
+}
+
+#second-1:checked ~ .category label .one,
+#second-2:checked ~ .category label .two,
+#second-3:checked ~ .category label .three{
+    border-color: #d9d9d9;
+    background: #4ea4eb;
+}
+#third-1:checked ~ .category label .one,
+#third-2:checked ~ .category label .two,
+#third-3:checked ~ .category label .three{
+    border-color: #d9d9d9;
+    background: #4ea4eb;
+}
+#fourth-1:checked ~ .category label .one,
+#fourth-2:checked ~ .category label .two,
+#fourth-3:checked ~ .category label .three{
+    border-color: #d9d9d9;
+    background: #4ea4eb;
+}
+#fifth-1:checked ~ .category label .one,
+#fifth-2:checked ~ .category label .two,
+#fifth-3:checked ~ .category label .three{
+    border-color: #d9d9d9;
+    background: #4ea4eb;
+}
+form input[type="radio"]{
+    display: none;
+}
+
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button input{
+    height: 100%;
+    width:100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #4ea4eb, #f15fc6);
+}
+form .button input:hover{
+    background: linear-gradient(-135deg, #4ea4eb, #f15fc6);
+}
+
+@media(max-width: 584px){
+    .container{
+        max-width: 100%;
+        
+    }
+    form .details .category{
+        width: 100%;
+    }
+    .container form .device {
+        /* max-width: 400px; */
+        overflow-x: scroll;
+    }
+    
+}
